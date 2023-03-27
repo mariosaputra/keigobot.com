@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 You need OPENAI_API_KEY
 https://platform.openai.com/account/api-keys
-and put that to .env.local.sample
+and put that to .env.local
 
 install dependencies with
 
