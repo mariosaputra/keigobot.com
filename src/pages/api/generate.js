@@ -8,7 +8,7 @@ export default async function handler(req, res) {
 
   const openai = new OpenAIApi(config);
 
-  const prompt = `I want you to act as an Japanese teacher. I will speak to you in any language, and you will change it to Keigo form. Make it natural and keep the meaning same. I want you to only reply the correction, the improvements and nothing else, do not write explanations. My sentence is {${userInput}}`;
+  const prompt = `You are a professional japanese businessman. I want you to convert my sentence to Keigo form or Japanese business form. Just write the converted sentences. Don't write explanation or any other things. My sentece is : {${userInput}}`;
 
   const response = await openai.createChatCompletion({
     model: "gpt-3.5-turbo",
